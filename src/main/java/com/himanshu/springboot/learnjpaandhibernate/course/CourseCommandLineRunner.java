@@ -1,16 +1,18 @@
-package com.himanshu.springboot.learnjpaandhibernate.course.jdbc;
+package com.himanshu.springboot.learnjpaandhibernate.course;
 
-import com.himanshu.springboot.learnjpaandhibernate.course.jdbc.repository.CourseJdbcRepository;
+//import com.himanshu.springboot.learnjpaandhibernate.course.jdbc.repository.CourseJdbcRepository;
+import com.himanshu.springboot.learnjpaandhibernate.course.jpa.CourseJpaRepository;
 import com.himanshu.springboot.learnjpaandhibernate.course.models.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CourseJdbcCommandLineRunner implements CommandLineRunner {
+public class CourseCommandLineRunner implements CommandLineRunner {
 
     @Autowired
-    private CourseJdbcRepository repository;
+    //private CourseJdbcRepository repository;
+    private CourseJpaRepository repository;
 
     @Override
     public void run(String... args) throws Exception {
