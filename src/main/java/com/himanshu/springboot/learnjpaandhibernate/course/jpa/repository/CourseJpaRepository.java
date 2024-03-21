@@ -1,4 +1,4 @@
-package com.himanshu.springboot.learnjpaandhibernate.course.jpa;
+package com.himanshu.springboot.learnjpaandhibernate.course.jpa.repository;
 
 import com.himanshu.springboot.learnjpaandhibernate.course.models.Course;
 import jakarta.persistence.EntityManager;
